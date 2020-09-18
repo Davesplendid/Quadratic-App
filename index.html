@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Quadratic App">
+    <meta name="description" content="Quadratic App is an application where you can find a solution to all quadratic Equation solutions">
+    <meta name="keywords" content="Quadratic,Equation, Application, solution ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadratic Equation Using JavaScript </title>
+</head>
+<body>
+    <h1>Quadratic Equation Using JavaScript</h1>
+
+    <script>
+        var a, b, c
+        var a = prompt("Enter value of a","");
+        var b = prompt("Enter value of b","");
+        var c = prompt("Enter value of c","");
+
+        var root_part = Math.sqrt(b * b - 4 * a * c);
+        var denom = 2 * a;
+
+        var root1 = (-b + root_part)/ denom;
+        var root2 = (-b - root_part)/ denom;
+
+        document.write("Ist root:"+root1+"<br />");
+        document.write("2nd root:"+root2+"<br />");
+
+
+    </script>
+
+
+    
+</body>
+</html>
